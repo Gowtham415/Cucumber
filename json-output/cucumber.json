@@ -1,0 +1,70 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Search for roundtrip flights",
+        "description": "",
+        "id": "searchflights;search-for-roundtrip-flights",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4768122700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Launch Chrome browser",
+            "match": {
+              "location": "searhFlights_stepDefinition.launchChromeBrowser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 6994101200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Launch the website",
+            "match": {
+              "location": "searhFlights_stepDefinition.launchSite()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34290100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Get the title",
+            "match": {
+              "location": "searhFlights_stepDefinition.getTitleofSite()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1407100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate the title",
+            "match": {
+              "location": "searhFlights_stepDefinition.validateTitle()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "SearchFlights",
+    "description": "",
+    "id": "searchflights",
+    "keyword": "Feature",
+    "uri": "D:/WorkSpace/Selenium/cucumber/src/main/java/features/searchflights.feature"
+  }
+]
