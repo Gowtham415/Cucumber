@@ -21,7 +21,7 @@ import java.util.List;
 
 import org.junit.Assert;
 
-public class searhFlights_stepDefinition {
+public class StepDefinitionClass {
 	
 	protected WebDriver driver;
 	protected WebDriverWait driverWait;
@@ -30,7 +30,7 @@ public class searhFlights_stepDefinition {
 	public JavascriptExecutor jsExec;
 	String title;
 	
-	@Before
+	@Before(order = 0)
 	public void setUp() {
 		System.setProperty("webdriver.chrome.driver", "D:\\Softwares\\chromedriver.exe");
 		driver = new ChromeDriver();
@@ -41,6 +41,12 @@ public class searhFlights_stepDefinition {
 	@After
 	public void tearDown() {
 		driver.close();
+	}
+	
+	// Applicable only for test with Twitter Tag
+	@Before("@Twitter")
+	public void launch_twitter() {
+		driver.get("https://twitter.com");
 	}
 	
 	@Given("^Launch the website$")
@@ -84,12 +90,7 @@ public class searhFlights_stepDefinition {
 	public void validationOfRoundTrip() {
 		Assert.assertTrue(true);
 	}
-	
-	
-	@Given("^Launch twitter$")
-	public void launch_twitter() {
-		driver.get("https://twitter.com");
-	}
+
 
 	@When("^User Privided the username and password$")
 	public void login_to_twitter(DataTable data) {
