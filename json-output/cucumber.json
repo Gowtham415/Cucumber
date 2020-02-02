@@ -3,28 +3,38 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "Search for roundtrip flights",
+        "before": [
+          {
+            "result": {
+              "duration": 4542430799,
+              "status": "passed"
+            },
+            "match": {
+              "location": "searhFlights_stepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "Title check",
         "description": "",
-        "id": "searchflights;search-for-roundtrip-flights",
+        "id": "searchflights;title-check",
+        "after": [
+          {
+            "result": {
+              "duration": 222039299,
+              "status": "passed"
+            },
+            "match": {
+              "location": "searhFlights_stepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 4768122700,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "Launch Chrome browser",
-            "match": {
-              "location": "searhFlights_stepDefinition.launchChromeBrowser()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 6994101200,
+              "duration": 22049888699,
               "status": "passed"
             },
             "line": 6,
@@ -32,11 +42,11 @@
             "match": {
               "location": "searhFlights_stepDefinition.launchSite()"
             },
-            "keyword": "And "
+            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 34290100,
+              "duration": 6739201,
               "status": "passed"
             },
             "line": 7,
@@ -48,7 +58,7 @@
           },
           {
             "result": {
-              "duration": 1407100,
+              "duration": 1538799,
               "status": "passed"
             },
             "line": 8,
@@ -58,13 +68,106 @@
             },
             "keyword": "Then "
           }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@SanityTests"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3440561700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "searhFlights_stepDefinition.setUp()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Login to twitter",
+        "description": "",
+        "id": "searchflights;login-to-twitter",
+        "after": [
+          {
+            "result": {
+              "duration": 2080633700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "searhFlights_stepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 811705900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Launch twitter",
+            "match": {
+              "location": "searhFlights_stepDefinition.launch_twitter()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2540559300,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User Privided the username and password",
+            "match": {
+              "location": "searhFlights_stepDefinition.login_to_twitter(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "gowthampage@gmail.com",
+                  "10je1a0415"
+                ],
+                "line": 20
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1751642400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "validate if user is logged in",
+            "match": {
+              "location": "searhFlights_stepDefinition.validate_twitter_login()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@SanityTests"
+          },
+          {
+            "line": 16,
+            "name": "@Regression"
+          }
         ]
       }
     ],
     "name": "SearchFlights",
-    "description": "",
+    "description": "Description: To search the hotels/Flights in th expedia webSite",
     "id": "searchflights",
     "keyword": "Feature",
-    "uri": "D:/WorkSpace/Selenium/cucumber/src/main/java/features/searchflights.feature"
+    "uri": "searchflights.feature"
   }
 ]
