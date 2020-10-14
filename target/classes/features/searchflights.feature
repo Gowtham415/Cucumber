@@ -1,4 +1,5 @@
 Feature: SearchFlights 
+This functionality is used to search the flights
 
 @SanityTests 
 Scenario: Title check 
@@ -6,7 +7,7 @@ Scenario: Title check
 	When Get the title 
 	Then validate the title 
 
-@SanityTests @Regression 
+@SanityTests @Regression @Twitter
 Scenario: Round trip check 
 	Given Launch the website 
 	When provide Origin "Hyderabad" and destination "New Delhi" 

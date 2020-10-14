@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 				format = { "pretty", "html:test-output","json:json-output\\cucumber.json" },
 				monochrome = true, 
 				dryRun = false,
-				tags = { "~@SanityTests,~@Regression","@Twitter" })
+				tags = { "@SanityTests,@Regression,@Twitter" })
 public class TestRunner {
 
 }
